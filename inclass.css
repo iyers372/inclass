@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+#openingScreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-size: 17px;
+    font-weight: bold;
+    animation: fadeOut 6s forwards;
+}
+
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+
+#mainContent {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#charInput {
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#submitButton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: grey;
+}
+
+
+#outputContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#displayedImage {
+    display: none;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+#imageTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
